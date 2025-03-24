@@ -1,0 +1,134 @@
+.nav{
+    width: 100%;
+    background-color: skyblue;
+    padding: 20px 0px;/*agrandir le conteneur*/
+}
+.nav ul{
+    display: flex;/*mettre les elements sur une ligne*/
+    justify-content: end;/*mettre le conteneur a la fin*/
+    margin-right: 10px;
+
+}
+.nav ul li{
+    list-style-type: none;/*enleve les puces sur les liste*/
+    margin-left: 10px;/*mettre l'espace a gauche des elements*/
+}
+.nav ul li a{
+    text-decoration: none;/*enleve les decorations sur les liens*/
+    color: white;
+}
+.parent{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+   margin-bottom: 50px;
+   min-height: 200px;
+   height: 450px;
+   flex-wrap: wrap;
+}
+.parent .child1{
+    width: 45%;
+    margin-left: 5%;
+    
+}
+.parent .child1 button{
+    margin-top: 50%;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgb(122, 209, 198);
+    box-shadow: -0px 0px -8px rgba(0,0,0);
+    border: none;
+    cursor: pointer;
+}
+.parent .child1 p{
+    text-align: justify;
+}
+.parent .child2{
+    width: 45%;
+    margin-left: 5%;
+}
+.parent .child2 img{
+    width: 90%;
+    height: 100%;
+}
+.contain{
+    margin-top: 30px;
+}
+.contain .form{
+    margin-left:50% ;
+    margin-top: 12px;
+}
+.contain input{
+    width: 50%;
+    height: 25px;
+    margin-left: 10px;
+}
+.contain .row{
+    margin-top: 20px;
+    margin-left: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.contain .row div{
+    width: 30%;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+.formulaire1{
+width: 80%;
+margin-top: 50px;
+margin-bottom: 60px;
+}
+.formulaire1 div{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+}
+.formulaire1 div label{
+    width: 200px;
+    display: block;
+    text-align: center;
+}
+.formulaire1 div input{
+    width: 30%;
+    height: 30px;
+    margin-left: 20px;
+}
+.formulaire1 button{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 60px;
+}
+footer{
+    background-color: skyblue;
+}
+footer .foot{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .foot div{
+    width: 45%;
+}
+footer .copy{
+    margin-left: 5%;
+}
+footer .localisation{
+    text-align: end;
+}
+@media screen and (max-width:780px) {
+    .parent .child1{
+        width: 90%;
+    }
+    .parent .child1 button{
+        margin-top: 10%;
+    }
+    .parent .child2{
+        width: 90%;
+    }
+}
